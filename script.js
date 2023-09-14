@@ -1,6 +1,5 @@
 const table = document.createElement("table");
 
-document.body.appendChild(table);
 
 const addRow = (key, value) => {
   const row = document.createElement("tr");
@@ -50,3 +49,4 @@ for (const property in navigator) {
 addRow("Browser window size", `${window.innerWidth}x${window.innerHeight}`);
 addRow("Computer Screen size", `${screen.width}x${screen.height}`);
 addRow("Timezone", Intl.DateTimeFormat().resolvedOptions().timeZone);
+document.body.appendChild(table);
