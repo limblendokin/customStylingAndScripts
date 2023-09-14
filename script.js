@@ -1,3 +1,4 @@
+(function(){
 const table = document.createElement("table");
 
 
@@ -50,3 +51,4 @@ addRow("Browser window size", `${window.innerWidth}x${window.innerHeight}`);
 addRow("Computer Screen size", `${screen.width}x${screen.height}`);
 addRow("Timezone", Intl.DateTimeFormat().resolvedOptions().timeZone);
 document.body.appendChild(table);
+})()
